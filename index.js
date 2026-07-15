@@ -39,7 +39,7 @@ coach: "Luis Enrique"
 
 ]
 
-app.get("/", (req, res) => {
+app.get("/worldCup", (req, res) => {
     res.send('welcome to backend class')
     // console.log('I have accessed the path');
     
@@ -47,6 +47,10 @@ app.get("/", (req, res) => {
 
 app.get("/worldcup", (req, res) => {
     res.send(worldCup)
+})
+
+app.get("/hurray", (req, res) => {
+    res.send("Hurray! I have built my first API 😁😁")
 })
 
 app.listen(port, ()=> {
